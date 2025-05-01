@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        autograf: ['var(--font-autograf)'],
+        retrophile: ['var(--font-retrophile)']
+      },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
@@ -61,13 +65,17 @@ const config: Config = {
   			}
   		},
       animation: {
-        marquee: 'marquee 15s linear infinite',
+        marquee: 'marquee 12s linear infinite',
+        marquee2: 'marquee2 15s linear infinite',
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '50%': {transform: 'translateX(0%)'},
+          '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       }
   	}
