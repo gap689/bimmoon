@@ -12,6 +12,8 @@ const brands = [
   { name: "UPS", src: "/brands/ups.svg" },
   { name: "Nike", src: "/brands/nike.svg" },
   { name: "Amazon", src: "/brands/amazon.svg" },
+  { name: "Ikea", src: "/brands/ikea.svg" },
+  { name: "Puma", src: "/brands/puma.svg" },
 ];
 
 export function BrandMarquee() {
