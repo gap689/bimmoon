@@ -6,8 +6,31 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { TopNavigation } from '@/components/top-navigation'
 import { Footer } from '@/components/footer'
 import Script from 'next/script'
+import localFont from '@next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const autograf = localFont({ 
+  src: [
+    { path: './fonts/Autograf.woff2' },
+    { path: './fonts/Autograf.woff' },
+  ],
+  variable: '--font-autograf',
+})
+
+const myFont = localFont({
+  src: './fonts/Autograf.ttf',
+  display: 'swap',
+  variable: '--font-autograf',
+});
+
+const retrophile = localFont({ 
+  src: [
+    { path: './fonts/Retrophile.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/Retrophile.woff', weight: '400', style: 'normal' },
+  ],
+  variable: '--font-retrophile',
+})
 
 export const metadata: Metadata = {
   title: 'Bimmoon',
@@ -20,8 +43,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable}`}>
+      <body className={inter.className }>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
