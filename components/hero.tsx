@@ -25,9 +25,9 @@ export function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+      <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-          Bold Prints. Stunning Impact.
+          <p className="font-retrophile">Bimmoon.</p> Stunning Impact.
         </h1>
         <p className="text-lg md:text-xl text-white mb-6 max-w-xl drop-shadow">
           {/* We bring your ideas to life with high-quality printing solutions for businesses and creatives. */}
