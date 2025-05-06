@@ -5,14 +5,16 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const brands = [
-  { name: "Google", src: "/brands/google.svg" },
-  { name: "Heineken", src: "/brands/heineken.svg" },
-  { name: "redbull", src: "/brands/redbull.svg" },
-  { name: "CocaCola", src: "/brands/coca-cola.svg" },
-  { name: "UPS", src: "/brands/ups.svg" },
-  { name: "Yamaha", src: "/brands/yamaha.svg" },
-  { name: "Ebay", src: "/brands/ebay.svg" },
-  { name: "Levis", src: "/brands/levis.svg" },
+  { name: "Plastiglas", src: "/brands/plastiglaswhite.svg" },
+  { name: "acriplas", src: "/brands/acriplas.svg" },
+  { name: "Mimaki", src: "/brands/mimaki.svg" },
+  { name: "Asus", src: "/brands/asus.svg" },
+  { name: "AveryDennison", src: "/brands/averydennison.svg" },
+  { name: "Coreldraw", src: "/brands/coreldraw.svg" },
+  { name: "xtool", src: "/brands/xtool.svg" },
+  { name: "eurocotton", src: "/brands/eurocotton.svg" },
+  { name: "fitcap", src: "/brands/fitcap.svg" },
+  { name: "3m", src: "/brands/3m.svg" },
 ];
 
 export function BrandMarquee() {
