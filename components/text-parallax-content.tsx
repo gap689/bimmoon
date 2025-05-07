@@ -152,10 +152,10 @@ const ExampleContent2 = () => (
       Lo que creamos para ti
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-lg text-neutral-600 md:text-xl">
         Ya sea que busques algo para tu hogar, tu negocio,tu carro o para un regalo especial, tenemos lo que necesitas. Cada producto está hecho a mano y se puede personalizar para que encaje perfectamente con lo que imaginas.
       </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-8 text-lg text-neutral-600 md:text-xl">
         Cada pieza es una expresión de estilo, fabricada con precisión.
       </p>
       <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">

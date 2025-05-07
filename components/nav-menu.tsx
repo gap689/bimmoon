@@ -42,7 +42,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
   return (
-    <NavigationMenu className="hidden sm:flex">
+    <NavigationMenu className="hidden sm:flex mr-4">
       <NavigationMenuList>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
