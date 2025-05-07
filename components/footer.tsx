@@ -5,7 +5,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
         {/* Left side - Company Info */}
         <div className="mb-4 md:mb-0">
-          <h2 className="text-lg font-semibold">Bimmoon Stickers</h2>
+          <h2 className="text-lg font-semibold text-slate-400 font-retrophile">Bimmoon</h2>
           <p className="text-sm text-gray-600">
             Crafting quality since 2000.
           </p>
