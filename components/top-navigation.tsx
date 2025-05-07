@@ -34,7 +34,7 @@ export function TopNavigation() {
         </div> */}
 
         {/* Right: Placeholder for actions */}
-        <div className="flex-1 flex items-center sm:justify-between justify-end mr-3">
+        <div className="flex-1 flex items-center justify-end mr-3">
           <NavMenu/>
 
           {/* Optional: Account, cart, etc */}
