@@ -42,7 +42,7 @@ export function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-wrap gap-4 justify-center">
           <Button variant="default" size="lg">
-            Productos
+            Ver Productos
           </Button>
           <Button variant="outline" size="lg" className="text-white border-white hover:text-black">
             <a
