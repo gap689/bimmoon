@@ -5,9 +5,9 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
         {/* Left side - Company Info */}
         <div className="mb-4 md:mb-0">
-          <h2 className="text-lg font-semibold">Printing Co.</h2>
+          <h2 className="text-lg font-semibold">Bimmoon Stickers</h2>
           <p className="text-sm text-gray-600">
-            Crafting quality prints since 1998.
+            Crafting quality since 2000.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="/portfolio" className="text-sm text-gray-700 hover:underline">
+              <a href="/" className="text-sm text-gray-700 hover:underline">
                 Portfolio
               </a>
             </li>
@@ -40,7 +40,7 @@ export function Footer() {
         {/* Right side - Copyright */}
         <div className="mt-4 md:mt-0">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Printing Co. All rights reserved.
+            © {new Date().getFullYear()} Bimmoon Stickers. All rights reserved.
           </p>
         </div>
       </div>
