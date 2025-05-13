@@ -37,7 +37,7 @@ export function TopNavigation() {
 
           {/* Optional: Account, cart, etc */}
           <a
-            href="https://wa.me/525569728426"
+            href="https://wa.me/526646704470?text=Hola%2C%20quiero%20cotizar%20un%20producto%20personalizado.%20%C2%BFMe%20puedes%20ayudar%3F"
             target="_blank"
             title="Reach us via WhatsApp"
             rel="noopener noreferrer"
