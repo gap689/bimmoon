@@ -7,19 +7,17 @@ export function TopNavigation() {
     <header className="w-full backdrop-blur-sm fixed top-0 left-0 right-0 z-10">
       <nav className="relative flex items-center justify-between h-16 mx-4">
         {/* Left: Placeholder for future nav */}
-        <div className="shrink-0">
-          <a href="/" className="flex-1 flex items-center justify-start shrink-0">
-            {/* Optional: Nav buttons or hamburger */}
-            <Image
-              src="/bimmoonlogo.png"
-              alt="bimmoon logo"
-              width={120}
-              height={40}
-              priority
-              className="shrink-0"
-            />
-          </a>
-        </div>
+        <a href="/" className="flex items-center justify-start shrink-0">
+          {/* Optional: Nav buttons or hamburger */}
+          <Image
+            src="/bimmoonlogo.png"
+            alt="bimmoon logo"
+            width={120}
+            height={40}
+            priority
+            className="shrink-0"
+          />
+        </a>
 
         {/* Center: Logo */}
         {/* <div className="absolute left-1/2 transform -translate-x-1/2">
