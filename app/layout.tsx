@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Londrina_Outline } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -32,6 +32,13 @@ const retrophile = localFont({
   variable: '--font-retrophile',
 })
 
+const londrinaOutline = Londrina_Outline({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-londrina-outline', // Optional, for Tailwind
+});
+
 export const metadata: Metadata = {
   title: 'Bimmoon',
   description: 'Creative works',
@@ -43,8 +50,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable}`}>
-      <body className={inter.className }>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable}`}>
+      <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
