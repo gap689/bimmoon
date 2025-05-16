@@ -39,7 +39,7 @@ const ProductosPage = () => {
             Our WORK
           </div>
           {/* Left: Image preview */}
-          <div className="relative flex md:w-2/5 w-3/5 min-w-[250px] h-[calc(100vh_-_11rem)] md:h-[70vh] ml-3">
+          <div className="relative flex md:w-2/5 w-3/5 min-w-[250px] min-h-[350px] h-[calc(100vh_-_11rem)] md:h-[70vh] ml-3">
             <Image
               src={images[activeIndex].src}
               alt={images[activeIndex].label}
