@@ -4,7 +4,7 @@ import { NavMenu } from "@/components/nav-menu";
 
 export function TopNavigation() {
   return (
-    <header className="w-full backdrop-blur-sm fixed top-0 left-0 right-0 z-10">
+    <header className="w-full backdrop-blur-sm fixed top-0 left-0 right-0 z-30">
       <nav className="relative flex items-center justify-between h-16 mx-4">
         {/* Left: Placeholder for future nav */}
         <a href="/" className="flex items-center justify-start shrink-0">
