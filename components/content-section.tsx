@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ContentSection = () => {
   return ( 
-    <div className="h-full mt-16">
+    <div className="h-full mt-16 grid grid-cols-2">
       {/* <Vortex
         backgroundColor="black"
         rangeY={800}
@@ -11,7 +11,7 @@ const ContentSection = () => {
         baseHue={120}
         className="w-full h-full"
       > */}
-        <div className="relative h-60 md:h-64 xl:h-72">
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -29,7 +29,7 @@ const ContentSection = () => {
             Cortes y grabados con laser CO2
           </h2>
         </div>
-        <div className="relative h-60 md:h-64 xl:h-72">
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
             src="/stickers.jpeg"
             alt={`stickers section`}
@@ -41,7 +41,7 @@ const ContentSection = () => {
             Stickers
           </h2>
         </div>
-        <div className="relative h-60 md:h-64 xl:h-72">
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -58,7 +58,7 @@ const ContentSection = () => {
             Letreros
           </h2>
         </div>
-        <div className="relative h-60 md:h-64 xl:h-72">
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -75,7 +75,7 @@ const ContentSection = () => {
             Portaplacas
           </h2>
         </div> 
-        <div className="relative h-60 md:h-64 xl:h-72">
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
             src="/images/rotulos.jpeg"
             alt={`stickers section`}
