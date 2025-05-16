@@ -76,6 +76,13 @@ const ContentSection = () => {
           </h2>
         </div> 
         <div className="relative h-60 md:h-64 xl:h-72">
+          <Image
+            src="/images/rotulos.jpeg"
+            alt={`stickers section`}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
           <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
             Más
           </h2>
