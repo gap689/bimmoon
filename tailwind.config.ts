@@ -11,7 +11,8 @@ const config: Config = {
   	extend: {
       fontFamily: {
         autograf: ['var(--font-autograf)'],
-        retrophile: ['var(--font-retrophile)']
+        retrophile: ['var(--font-retrophile)'],
+		    londrina: ['var(--font-londrina-outline)', 'cursive'],
       },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
