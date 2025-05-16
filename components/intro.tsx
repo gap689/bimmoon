@@ -33,14 +33,6 @@ export function Intro({ setEntered }: HeroProps) {
         {/* Optional dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
       </motion.div>
-      <motion.h1
-        className="text-4xl md:text-5xl font-bold absolute md:bottom-6 bottom-5 left-4 md:left-6 xl:left-8 text-white drop-shadow-lg font-retrophile"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Bimmoon
-      </motion.h1>
       <motion.button
         onClick={() => setEntered(true)}
         className="absolute px-4 py-2 bg-black bottom-4 right-4 text-xs rounded-full font-semibold uppercase "
