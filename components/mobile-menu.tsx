@@ -36,7 +36,7 @@ export default function AnimatedHamburgerMenu() {
             initial={{ height: 0 }}
             animate={{ height: '100vh' }}
             exit={{ height: 0 }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
+            transition={{ duration: 1, ease: 'easeIn' }}
             className="fixed top-0 left-0 w-full overflow-hidden bg-[rgb(18,87,246)] text-white z-40"
           >
             <div className="flex flex-col py-28 px-20 uppercase h-full space-y-6 text-3xl">
