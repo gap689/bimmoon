@@ -43,7 +43,7 @@ export default function AnimatedHamburgerMenu() {
               <p className='uppercase text-xs font-light'>menu</p>
               <a href="/" onClick={toggleMenu}>Inicio</a>
               <a href="#servicios" onClick={toggleMenu}>Servicios</a>
-              <a href="#trabajos" onClick={toggleMenu}>Nuestros Trabajos</a>
+              <a href="/productos" onClick={toggleMenu}>Nuestros Trabajos</a>
               <a href="#contacto" onClick={toggleMenu}>Contacto</a>
             </div>
           </motion.div>
