@@ -15,7 +15,7 @@ const AboutPage = () => {
       >
         <div className="p-page">
           <p className="p-10 sm:p-20 title mt-20">
-            En <span className="font-retrophile">bimmoon</span> diseñamos lo que te representa.
+            En bimmoon diseñamos lo que te representa.
           </p>
           <div>
             <h2 className="uppercase font-medium text-xs my-4 text-[rgb(18,87,246)]">what we do</h2>
