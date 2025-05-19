@@ -108,7 +108,7 @@ body,
 
 @layer components {
   .p-page{
-    @apply pb-10 pt-10 px-[14px] sm:px-[calc(calc(100vw-600px)/2)] md:px-[calc(calc(100vw-725px)/2)] lg:px-[calc(calc(100vw-980px)/2)] xl:px-[calc(calc(100vw-1200px)/2)] 2xl:px-[calc(calc(100vw-1500px)/2)];
+    @apply pb-10 pt-10 px-[14px] sm:px-[calc(calc(100vw-600px)/2)] md:px-[calc(calc(100vw-725px)/2)] lg:px-[calc(calc(100vw-950px)/2)] xl:px-[calc(calc(100vw-1100px)/2)] 2xl:px-[calc(calc(100vw-1400px)/2)];
   }
   .title{
     @apply font-semibold text-4xl md:text-5xl uppercase;
