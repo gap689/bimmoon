@@ -8,7 +8,6 @@ export function TopNavigation() {
       <nav className="relative flex items-center justify-between h-16 px-2 sm:px-4 lg:px-6">
 
         <a href="/" className="flex items-center justify-start shrink-0">
-          {/* Optional: Nav buttons or hamburger */}
           <Image
             src="/bimmoonlogo.png"
             alt="bimmoon logo"
@@ -19,11 +18,8 @@ export function TopNavigation() {
           />
         </a>
 
-        {/* Right: Placeholder for actions */}
         <div className="flex-1 flex items-center justify-end mr-3">
           <NavMenu/>
-
-          {/* Optional: Account, cart, etc */}
           <a
             href="https://wa.me/526646704470?text=Hola%2C%20quiero%20cotizar%20un%20producto%20personalizado.%20%C2%BFMe%20puedes%20ayudar%3F"
             target="_blank"
