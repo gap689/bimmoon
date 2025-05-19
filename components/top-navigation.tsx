@@ -1,38 +1,23 @@
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import { NavMenu } from "@/components/nav-menu";
-import AnimatedHamburgerMenu from "@/components/mobile-menu";
 
 export function TopNavigation() {
   return (
     <header className="w-full backdrop-blur-sm fixed top-0 left-0 right-0 z-30">
       <nav className="relative flex items-center justify-between h-16 mx-4">
-        <div className="sm:hidden">
-          <AnimatedHamburgerMenu/>
-        </div>
 
-        <a href="/" className="hidden sm:flex items-center justify-start shrink-0">
+        <a href="/" className="flex items-center justify-start shrink-0">
           {/* Optional: Nav buttons or hamburger */}
           <Image
             src="/bimmoonlogo.png"
             alt="bimmoon logo"
-            width={120}
+            width={110}
             height={40}
             priority
-            className="shrink-0"
+            className="shrink-0 "
           />
         </a>
-
-        {/* Center: Logo */}
-        <div className="sm:hidden sm: absolute left-1/2 transform -translate-x-1/2">
-          <Image
-            src="/bimmoonlogo.png"
-            alt="bimmoon logo"
-            width={120}
-            height={40}
-            priority
-          />
-        </div>
 
         {/* Right: Placeholder for actions */}
         <div className="flex-1 flex items-center justify-end mr-3">

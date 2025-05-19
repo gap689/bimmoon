@@ -42,7 +42,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavMenu() {
   return (
-    <NavigationMenu className="hidden sm:flex mr-4">
+    <NavigationMenu className="mr-2">
       <NavigationMenuList>
         {/* <NavigationMenuItem>
           <NavigationMenuTrigger>Components</NavigationMenuTrigger>
@@ -68,19 +68,19 @@ export function NavMenu() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contacto" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref className="bg-red-400">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contacto
+              About
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="/ubicaciones" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Ubicaciones
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   )
