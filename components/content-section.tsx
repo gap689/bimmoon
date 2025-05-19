@@ -70,13 +70,25 @@ const ContentSection = () => {
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
             src="/images/rotulos.jpeg"
-            alt={`stickers section`}
+            alt={`rotulos`}
             fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
           <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
-            Más
+            Rótulos
+          </h2>
+        </div> 
+        <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
+          <Image
+            src="/images/estampados.jpeg"
+            alt={`estampados`}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+            Estampados
           </h2>
         </div> 
     </div>
