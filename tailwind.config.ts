@@ -13,6 +13,8 @@ const config: Config = {
         autograf: ['var(--font-autograf)'],
         retrophile: ['var(--font-retrophile)'],
 		    londrina: ['var(--font-londrina-outline)', 'cursive'],
+		    luckiestGuy: ['var(--font-luckiest-guy)'],
+		    michroma: ['var(--font-michroma)'],
       },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

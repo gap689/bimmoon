@@ -15,9 +15,9 @@ const ContentSection = () => {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/20" />
     
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Cortes y grabados con laser CO2
           </h2>
         </div>
@@ -28,8 +28,8 @@ const ContentSection = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <div className="absolute inset-0 bg-black/20" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Stickers
           </h2>
         </div>
@@ -45,8 +45,8 @@ const ContentSection = () => {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute inset-0 bg-black/40" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <div className="absolute inset-0 bg-black/20" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Letreros
           </h2>
         </div>
@@ -62,8 +62,8 @@ const ContentSection = () => {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute inset-0 bg-black/40" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <div className="absolute inset-0 bg-black/20" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Portaplacas
           </h2>
         </div> 
@@ -74,8 +74,8 @@ const ContentSection = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <div className="absolute inset-0 bg-black/20" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Rótulos
           </h2>
         </div> 
@@ -86,8 +86,8 @@ const ContentSection = () => {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm">
+          <div className="absolute inset-0 bg-black/20" />
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
             Estampados
           </h2>
         </div> 

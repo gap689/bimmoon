@@ -35,7 +35,7 @@ export function Intro({ setEntered }: HeroProps) {
       </motion.div>
       <motion.button
         onClick={() => setEntered(true)}
-        className="absolute px-4 py-2 bg-black bottom-4 right-4 text-xs rounded-full font-semibold uppercase "
+        className="absolute px-4 py-2 bg-black bottom-5 right-5 text-xs rounded-full font-semibold uppercase font-michroma"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >

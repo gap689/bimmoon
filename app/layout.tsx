@@ -1,10 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter, Londrina_Outline } from 'next/font/google'
+import { Inter, Londrina_Outline, Luckiest_Guy, Michroma } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from "@/components/theme-provider"
 import { TopNavigation } from '@/components/top-navigation'
-import { Footer } from '@/components/footer'
 import Script from 'next/script'
 import localFont from '@next/font/local'
 
@@ -39,6 +38,18 @@ const londrinaOutline = Londrina_Outline({
   variable: '--font-londrina-outline', // Optional, for Tailwind
 });
 
+const luckiestGuy = Luckiest_Guy({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-luckiest-guy'
+});
+
+const michroma = Michroma({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-michroma',
+});
+
 export const metadata: Metadata = {
   title: 'Bimmoon',
   description: 'Creative works',
@@ -50,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${luckiestGuy.variable} ${michroma.variable}`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
