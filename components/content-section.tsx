@@ -17,9 +17,9 @@ const ContentSection = () => {
 
           <div className="absolute inset-0 bg-black/20" />
     
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <a href="/productos/cortelaser" className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Cortes y grabados con laser CO2
-          </h2>
+          </a>
         </div>
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
@@ -29,9 +29,9 @@ const ContentSection = () => {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <a href="/productos/stickers" className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Stickers
-          </h2>
+          </a>
         </div>
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
@@ -46,9 +46,9 @@ const ContentSection = () => {
           </video>
 
           <div className="absolute inset-0 bg-black/20" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <a href="/productos/letreros" className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Letreros
-          </h2>
+          </a>
         </div>
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
@@ -63,9 +63,9 @@ const ContentSection = () => {
           </video>
 
           <div className="absolute inset-0 bg-black/20" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <a href="/productos/portaplacas" className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Portaplacas
-          </h2>
+          </a>
         </div> 
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
@@ -75,9 +75,9 @@ const ContentSection = () => {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <a href="/productos/rotulos" className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Rótulos
-          </h2>
+          </a>
         </div> 
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <Image
@@ -87,7 +87,7 @@ const ContentSection = () => {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
-          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 text-xs md:text-sm font-michroma">
+          <h2 className="absolute bottom-2 right-4 font-semibold bg-black/70 shrink-0 rounded-full px-4 py-2 sm:text-xs text-[10px] font-michroma">
             Estampados
           </h2>
         </div> 
