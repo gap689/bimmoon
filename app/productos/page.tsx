@@ -60,7 +60,7 @@ const ProductosPage = () => {
                   onClick={() => setActiveIndex(index)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'cursor-pointer font-sans transition-colors text-3xl font-medium uppercase md:text-4xl xl:text-5xl',
+                    'cursor-pointer font-luckiestGuy transition-colors text-3xl font-medium uppercase md:text-4xl xl:text-5xl',
                     activeIndex === index
                       ? 'text-teal-500'
                       : 'text-gray-400 hover:text-gray-600'
