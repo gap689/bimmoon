@@ -31,7 +31,7 @@ export function Intro({ setEntered }: HeroProps) {
         </video>
 
         {/* Optional dark overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
       </motion.div>
       <motion.button
         onClick={() => setEntered(true)}
