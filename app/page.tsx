@@ -40,7 +40,7 @@ export default function Home() {
       {/* </section> */}
       { entered && (
         <motion.div
-          className="relative"
+          className="relative h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}

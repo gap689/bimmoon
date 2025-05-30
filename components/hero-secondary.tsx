@@ -1,8 +1,8 @@
 const HeroSecondary = () => {
   return ( 
-    <div className="relative w-full">
+    <div className="relative w-full h-full">
       <video
-        className="w-full h-[90vh] object-cover"
+        className="w-full h-full object-cover"
         autoPlay
         muted
         loop
