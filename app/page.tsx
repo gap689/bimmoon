@@ -5,7 +5,7 @@ import { TextParallaxContentExample } from "@/components/text-parallax-content";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { TopNavigation } from "@/components/top-navigation";
-import ContentSection from "@/components/content-section";
+import GridSection from "@/components/grid-section";
 import HeroSecondary from "@/components/hero-secondary";
 import Section from "@/components/section";
 
@@ -48,7 +48,7 @@ export default function Home() {
           <TopNavigation />
           <HeroSecondary />
           <Section/>
-          <ContentSection />
+          <GridSection />
         </motion.div>
       )}
     </main>

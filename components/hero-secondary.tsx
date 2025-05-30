@@ -24,7 +24,7 @@ const HeroSecondary = () => {
           <p className="text-lg md:text-xl max-w-xl mx-auto">
             {/* Unlocking possibilities with <span className="text-blue-400">technology-driven</span> solutions that 
             shape the future. */}
-            Diseñamos productos y creamos historias visuales que dejan huella en vinil y más allá.
+            Creamos historias visuales que dejan huella en vinil y más allá.
           </p>
         </div>
       </div>

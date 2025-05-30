@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ContentSection = () => {
+const GridSection = () => {
   return ( 
     <div className="h-full grid grid-cols-2">
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
@@ -95,4 +95,4 @@ const ContentSection = () => {
   );
 }
 
-export default ContentSection;
+export default GridSection;
