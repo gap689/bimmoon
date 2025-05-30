@@ -9,7 +9,7 @@ const Section = () => {
       </div>
       <div className="max-w-xl mb-5 text-sm">
       Cada pieza es elaborada con atención al detalle y pasión por el diseño, creando algo que realmente represente tu estilo y personalidad.
-      Ya sea que busques algo para tu hogar, tu negocio,tu carro o para un regalo especial, tenemos lo que necesitas. Cada producto está hecho a mano y se puede personalizar para que encaje perfectamente con lo que imaginas.
+      Ya sea que busques algo para tu hogar, tu negocio, tu carro o para un regalo especial, tenemos lo que necesitas. Cada producto está hecho a mano y se puede personalizar para que encaje perfectamente con lo que imaginas.
       </div>
     </div>
   );
