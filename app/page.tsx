@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { TopNavigation } from "@/components/top-navigation";
 import ContentSection from "@/components/content-section";
 import HeroSecondary from "@/components/hero-secondary";
+import Section from "@/components/section";
 
 export default function Home() {
   const [entered, setEntered] = useState(false);
@@ -27,8 +28,6 @@ export default function Home() {
   return (
     <main className="h-full">
       {/* <Hero setEntered={setEntered}/> */}
-      {/* <BrandMarquee /> */}
-      {/* <TextParallaxContentExample /> */}
       {/* <section className="relative w-full h-full"> */}
         <AnimatePresence
           initial
@@ -47,7 +46,8 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <TopNavigation />
-          {/* <HeroSecondary /> */}
+          <HeroSecondary />
+          <Section/>
           <ContentSection />
         </motion.div>
       )}

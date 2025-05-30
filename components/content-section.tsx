@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ContentSection = () => {
   return ( 
-    <div className="h-full mt-16 grid grid-cols-2">
+    <div className="h-full grid grid-cols-2">
         <div className="relative h-60 md:h-64 xl:h-72 col-span-2 md:col-span-1">
           <video
             className="w-full h-full object-cover"

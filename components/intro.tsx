@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { FaWhatsapp } from "react-icons/fa";
-import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 type HeroProps = {
   setEntered: React.Dispatch<React.SetStateAction<boolean>>;

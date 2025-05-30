@@ -10,7 +10,7 @@ const WhatsAppButton = () => {
       className="flex items-center w-fit gap-2 px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition"
     >
       <FaWhatsapp className="w-4 h-4 shrink-0" />
-      <span className="hidden sm:inline text-xs text-nowrap font-michroma">Cotiza</span>
+      <span className="hidden sm:inline text-xs text-nowrap font-michroma">¡Pide por Whatsapp!</span>
     </a>
   );
 }
