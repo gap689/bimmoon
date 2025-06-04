@@ -17,7 +17,7 @@ const HeroSecondary = () => {
       {/* Centered Content */}
       <div className="absolute left-0 right-0 top-0 bottom-0 z-10 flex items-center justify-center h-full text-center text-white px-4">
         <div>
-          <div className="text-5xl md:text-7xl font-bold mb-4 font-retrophile uppercase">
+          <div className="xl:text-6xl text-5xl md:text-7xl font-bold mb-4 uppercase">
             <p>No vendemos productos.</p>
             <span className="text-[rgb(255,220,72)]">Vendemos estilo.</span>
           </div>
