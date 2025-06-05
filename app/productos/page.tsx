@@ -16,7 +16,7 @@ type ImageItem = {
 const images: ImageItem[] = [
   { label: 'Corte acrílico', src: '/images/acrilicos.jpg', link: '/productos/corteacrilico' },
   { label: 'Emblemas', src: '/images/emblemas.jpg', link: '/productos/emblemas' },
-  { label: 'Estampados', src: '/images/estampados.jpeg', link: '/productos/estampados' },
+  { label: 'Estampados', src: '/images/estampados.jpeg', link: '/productos/estampadoseimpresiones' },
   { label: 'Espejos', src: '/images/espejos.jpeg', link: '/productos/espejos' },
   { label: 'Hawaianas', src: '/images/letreros.jpeg', link: '/productos/hawaianas' },
   { label: 'Letreros', src: '/images/letreros.jpeg', link: '/productos/letreros' },
