@@ -47,6 +47,12 @@ export default function Home() {
         >
           <TopNavigation />
           <HeroSecondary />
+          <div className="pb-5">
+            <div className="py-5 p-page font-michroma text-center">
+              Original brands for quality and performance.
+            </div>
+            <BrandMarquee/>
+          </div>
           <Section/>
           <GridSection />
         </motion.div>
