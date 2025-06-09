@@ -19,7 +19,7 @@ const brands = [
 
 export function BrandMarquee() {
   return (
-    <section className="relative w-full overflow-hidden py-6 border-t border-b bg-transparent">
+    <section className="relative w-full overflow-hidden py-7 bg-transparent">
       <Marquee pauseOnHover speed={50}>
         { brands.map((brand, i) => (
           <div
