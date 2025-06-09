@@ -22,9 +22,9 @@ const images: ImageItem[] = [
   { label: 'Letreros', src: '/images/letreros.jpeg', link: '/productos/letreros' },
   { label: 'Stickers', src: 'stickers.jpeg', link: '/productos/stickers' },
   { label: 'Portaplacas', src: '/images/portaplacas.jpeg', link: '/productos/portaplacas' },
-  { label: 'Postes', src: '/images/portaplacas.jpeg', link: '/productos/postes' },
-  { label: 'Marimbas', src: '/images/portaplacas.jpeg', link: '/productos/marimbas' },
-  { label: 'Extras', src: '/images/portaplacas.jpeg', link: '/productos/extras' },
+  // { label: 'Postes', src: '/images/portaplacas.jpeg', link: '/productos/postes' },
+  { label: 'Marimbas', src: '/images/marimbas.jpg', link: '/productos/marimbas' },
+  { label: 'Extras', src: '/images/extras.jpg', link: '/productos/extras' },
 ];
 
 const ProductosPage = () => {
