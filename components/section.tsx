@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 const Section = () => {
   return ( 
     <div className="bg-[rgb(255,220,72)] text-center p-page text-black flex flex-col items-center">
@@ -10,6 +13,13 @@ const Section = () => {
       <div className="max-w-xl mb-5 text-sm">
       Cada pieza es elaborada con atención al detalle y pasión por el diseño, creando algo que realmente represente tu estilo y personalidad.
       Ya sea que busques algo para tu hogar, tu negocio, tu carro o para un regalo especial, tenemos lo que necesitas. Cada producto está hecho a mano y se puede personalizar para que encaje perfectamente con lo que imaginas.
+      </div>
+      <div className="py-4">
+        <Button className="rounded-none" variant="secondary" asChild>
+          <Link href="/about" className="font-michroma uppercase">
+            Conócenos
+          </Link>
+        </Button>
       </div>
     </div>
   );
