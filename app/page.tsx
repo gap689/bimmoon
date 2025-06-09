@@ -8,6 +8,7 @@ import { TopNavigation } from "@/components/top-navigation";
 import GridSection from "@/components/grid-section";
 import HeroSecondary from "@/components/hero-secondary";
 import Section from "@/components/section";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   const [entered, setEntered] = useState(false);
@@ -55,6 +56,7 @@ export default function Home() {
           </div>
           <Section/>
           <GridSection />
+          <Footer/>
         </motion.div>
       )}
     </main>

@@ -1,48 +1,60 @@
+import Image from "next/image";
+import Link from "next/link";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t bg-gray-50">
-      <div className="container mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
-        {/* Left side - Company Info */}
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-lg font-semibold text-slate-400 font-retrophile">Bimmoon</h2>
-          <p className="text-sm text-gray-600">
-            Crafting quality since 2000.
-          </p>
+    <footer className="bg-black py-10">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+        {/* Logo & Address */}
+        <div className="space-y-2">
+          <div className="flex gap-3">
+            <div className="">
+              <Image
+                src="/bimmoonlogo.png" // update with your actual logo path
+                alt="Bimmoon Media Logo"
+                width={120}
+                height={40}
+              />
+            </div>
+            <div className="flex flex-col justify-center p-4">
+              <p className="text-xl font-bold">Bimmoon Stickers</p>
+              <p className="flex">1234 Street, City, Country</p>
+              <Link
+                href="https://www.google.com/maps?q=1234+Example+Street"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-yellow-300 uppercase text-sm font-semibold font-michroma"
+              >
+                Google Maps
+              </Link>
+            </div>
+          </div>
         </div>
 
-        {/* Center - Site Links */}
-        <nav aria-label="Footer Navigation">
-          <ul className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <li>
-              <a href="/services" className="text-sm text-gray-700 hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="/" className="text-sm text-gray-700 hover:underline">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="text-sm text-gray-700 hover:underline">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-sm text-gray-700 hover:underline">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {/* Contact & Socials */}
+        <div className="text-center space-y-2">
+          <div className="font-bold uppercase text-lg">
+            Sociales
+          </div>
 
-        {/* Right side - Copyright */}
-        <div className="mt-4 md:mt-0">
-          <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Bimmoon Stickers. All rights reserved.
-          </p>
+          <div className="flex justify-center gap-4 mt-2">
+            <Link href="https://facebook.com" target="_blank">
+              <FaFacebookF className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
+            </Link>
+            <Link href="https://instagram.com" target="_blank">
+              <FaInstagram className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
+            </Link>
+            <Link href="https://linkedin.com" target="_blank">
+              <FaLinkedinIn className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
+            </Link>
+          </div>
         </div>
+      </div>
+
+      {/* Copyright */}
+      <div className="mt-8 text-center text-sm text-[rgb(255,220,72)] font-michroma">
+        © 2025 Bimmoon Media Inc. All rights reserved.
       </div>
     </footer>
   );
