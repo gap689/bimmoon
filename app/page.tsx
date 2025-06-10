@@ -55,7 +55,7 @@ export default function Home() {
             <BrandMarquee/>
           </div>
           <Section/>
-          <GridSection />
+          {/* <GridSection /> */}
           <Footer/>
         </motion.div>
       )}

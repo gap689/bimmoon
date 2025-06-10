@@ -47,15 +47,13 @@ const ProductosPage = () => {
         className="w-full h-full"
       >
         <section className="w-full flex h-full justify-center items-center relative">
-          <div className="absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wider uppercase px-4 z-10 font-extralight font-serif">
+          <div className="hidden sm:block absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wider uppercase px-4 z-10 font-extralight font-serif">
             Our WORK
           </div>
           {/* Left: Image preview */}
-          <div className="relative flex md:w-2/5 w-3/5 min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh] ml-3">
-            <Link href={images[activeIndex].link} className="absolute top-1/2 left-1/2 -translate-x-1/2 z-10">
-              <button className="px-4 py-2 bg-black/50 text-sm rounded-full transition font-bold">
-                Ver Galería {images[activeIndex].label}
-              </button>
+          <div className="relative flex md:w-2/5 sm:w-3/5 w-full min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh]">
+            <Link href={images[activeIndex].link} className="sm:absolute hidden sm:flex sm:bottom-6 xl:bottom-1/4 left-1/2 -translate-x-1/2 z-10 px-4 py-2 bg-black/50 text-sm rounded-full transition font-bold text-nowrap">
+              Ver Galería {images[activeIndex].label}
             </Link>
             <AnimatePresence mode="wait">
               <motion.img
@@ -82,34 +80,46 @@ const ProductosPage = () => {
               />
             </AnimatePresence>
             {/* Navigation button */}
-            <div className="bottom-4 right-4 hidden sm:absolute">
+            {/* <div className="bottom-4 right-4 hidden sm:absolute">
               <Link href={images[activeIndex].link}>
-                <button className="px-4 py-2 rounded-xl bg-teal-600 text-white text-sm shadow-md hover:bg-teal-700 transition">
+                <button className="px-4 py-2 rounded-xl bg-teal-600 text-white text-sm shadow-md hover:bg-teal-700 transition ">
                   Ver {images[activeIndex].label}
                 </button>
               </Link>
-            </div>
+            </div> */}
             {/* Optional overlay on mobile */}
             <div className="md:hidden absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-10" />
           </div>
 
           {/* Right: Word list */}
-          <div className="flex flex-col w-3/5 justify-center items-center gap-6 p-2 z-[4] -translate-x-10 sm:translate-x-0 overflow-x-hidden h-full no-scrollbar">
+          <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center gap-6 p-2 pl-8 sm:pl-0 z-20 overflow-x-hidden h-full no-scrollbar">
             {/* <h2 className="text-xl font-semibold mb-2">Nuestros Productos</h2> */}
-            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pb-20">
+            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-8 sm:pl-0">
               {images.map((item, index) => (
                 <li
                   key={item.label}
                   onClick={() => setActiveIndex(index)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex cursor-pointer font-londrina tracking-widest transition-colors text-3xl font-medium uppercase md:text-4xl xl:text-6xl last:pb-20 first:mt-20',
+                    'flex items-center cursor-pointer font-londrina tracking-widest font-medium uppercase text-4xl xl:text-6xl transition-colors last:pb-20 first:mt-20',
                     activeIndex === index
-                      ? 'text-white fill-white font-bold font-luckiestGuy tracking-wide'
-                      : 'text-gray-400 hover:text-gray-600'
+                      ? 'text-white fill-white font-bold font-londrinaSolid tracking-wide'
+                      : 'text-gray-100'
                   )}
                 >
-                  {item.label}
+                  <p>
+                    {item.label}
+                  </p>
+                  <div className="p-2">
+                    {
+                      activeIndex === index && (
+                        <Link href={images[activeIndex].link} className="sm:hidden z-10 px-4 py-2 bg-black/50 text-sm rounded-full transition font-normal font-sans lowercase">
+                          Ver Galería
+                        </Link>
+                      )
+                    }
+                  
+                  </div>
                 </li>
               ))}
             </ul>
