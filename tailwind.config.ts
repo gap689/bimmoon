@@ -16,6 +16,8 @@ const config: Config = {
 		londrinaSolid: ['var(--font-londrina-solid)'],
 		luckiestGuy: ['var(--font-luckiest-guy)'],
 		michroma: ['var(--font-michroma)'],
+		bungee: ['var(--font-bungee)'],
+		bungeeOutline: ['var(--font-bungee-outline)'],
       },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

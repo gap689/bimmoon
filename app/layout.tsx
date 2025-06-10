@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Londrina_Outline, Londrina_Solid, Luckiest_Guy, Michroma } from 'next/font/google'
+import { Bungee, Bungee_Outline, Inter, Londrina_Outline, Londrina_Solid, Luckiest_Guy, Michroma } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -56,6 +56,18 @@ const michroma = Michroma({
   variable: '--font-michroma',
 });
 
+const bungee = Bungee({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-bungee',
+});
+
+const bungeeOutline = Bungee_Outline({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-bungee-outline'
+});
+
 export const metadata: Metadata = {
   title: 'Bimmoon',
   description: 'Creative works',
@@ -67,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungee.variable} ${bungeeOutline.variable}`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
