@@ -10,10 +10,10 @@ import { BackButton } from "@/components/back-button";
 import { Button } from "@/components/ui/button";
 import { SiGooglephotos } from "react-icons/si";
 
-const extrasImages = Array.from({ length: 27 }, (_, i) => ({
-  id: `portaplaca-${i + 1}`,
+const extrasImages = Array.from({ length: 7 }, (_, i) => ({
+  id: `extras-${i + 1}`,
   src: `${i + 1}.jpg`,
-  alt: `Portaplaca ${i + 1}`
+  alt: `Extras ${i + 1}`
 }));
 
 const ExtrasPage = () => {
