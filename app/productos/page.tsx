@@ -79,22 +79,12 @@ const ProductosPage = () => {
                 className="absolute w-full h-full object-cover rounded-lg"
               />
             </AnimatePresence>
-            {/* Navigation button */}
-            {/* <div className="bottom-4 right-4 hidden sm:absolute">
-              <Link href={images[activeIndex].link}>
-                <button className="px-4 py-2 rounded-xl bg-teal-600 text-white text-sm shadow-md hover:bg-teal-700 transition ">
-                  Ver {images[activeIndex].label}
-                </button>
-              </Link>
-            </div> */}
-            {/* Optional overlay on mobile */}
             <div className="md:hidden absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-10" />
           </div>
 
           {/* Right: Word list */}
-          <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center gap-6 p-2 pl-8 sm:pl-0 z-20 overflow-x-hidden h-full no-scrollbar">
-            {/* <h2 className="text-xl font-semibold mb-2">Nuestros Productos</h2> */}
-            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-8 sm:pl-0">
+          <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
+            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar">
               {images.map((item, index) => (
                 <li
                   key={item.label}
@@ -110,16 +100,13 @@ const ProductosPage = () => {
                   <p>
                     {item.label}
                   </p>
-                  <div className="p-2">
                     {
                       activeIndex === index && (
-                        <Link href={images[activeIndex].link} className="sm:hidden z-10 px-4 py-2 bg-black/50 text-sm rounded-full transition font-normal font-sans lowercase">
+                        <Link href={images[activeIndex].link} className="sm:hidden z-10 sm:px-4 sm:py-2 px-3 py-1 bg-black/50 text-xs rounded-full transition font-normal font-sans lowercase text-nowrap ml-2 tracking-normal">
                           Ver Galería
                         </Link>
                       )
                     }
-                  
-                  </div>
                 </li>
               ))}
             </ul>
