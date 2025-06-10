@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Londrina_Outline, Luckiest_Guy, Michroma } from 'next/font/google'
+import { Inter, Londrina_Outline, Londrina_Solid, Luckiest_Guy, Michroma } from 'next/font/google'
 import './globals.css'
 
 import { ThemeProvider } from "@/components/theme-provider"
@@ -35,8 +35,14 @@ const londrinaOutline = Londrina_Outline({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-londrina-outline', // Optional, for Tailwind
+  variable: '--font-londrina-outline',
 });
+
+const londrinaSolid = Londrina_Solid({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-londrina-solid'
+})
 
 const luckiestGuy = Luckiest_Guy({
   weight: '400',
@@ -61,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${luckiestGuy.variable} ${michroma.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable}`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
