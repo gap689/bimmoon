@@ -18,9 +18,9 @@ const images: ImageItem[] = [
   { label: 'Emblemas', src: '/images/emblemas.jpg', link: '/productos/emblemas' },
   { label: 'Estampados', src: '/images/estampados.jpeg', link: '/productos/estampadoseimpresiones' },
   { label: 'Espejos', src: '/images/espejos.jpg', link: '/productos/espejos' },
-  { label: 'Hawaianas', src: '/images/letreros.jpeg', link: '/productos/hawaianas' },
+  { label: 'Hawaianas', src: '/images/hawaianas.jpg', link: '/productos/hawaianas' },
   { label: 'Letreros', src: '/images/letreros.jpeg', link: '/productos/letreros' },
-  { label: 'Stickers', src: 'stickers.jpeg', link: '/productos/stickers' },
+  { label: 'Stickers', src: '/images/stickers2.jpg', link: '/productos/stickers' },
   { label: 'Portaplacas', src: '/images/portaplacas.jpeg', link: '/productos/portaplacas' },
   // { label: 'Postes', src: '/images/portaplacas.jpeg', link: '/productos/postes' },
   { label: 'Marimbas', src: '/images/marimbas.jpg', link: '/productos/marimbas' },
@@ -47,11 +47,16 @@ const ProductosPage = () => {
         className="w-full h-full"
       >
         <section className="w-full flex h-full justify-center items-center relative">
-          <div className="absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-3xl xl:text-4xl tracking-wider uppercase px-4 z-10 font-extralight font-serif">
+          <div className="absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wider uppercase px-4 z-10 font-extralight font-serif">
             Our WORK
           </div>
           {/* Left: Image preview */}
-          <div className="relative flex md:w-2/5 w-3/5 min-w-[250px] min-h-[360px] h-[calc(100vh_-_11rem)] md:h-[70vh] ml-3">
+          <div className="relative flex md:w-2/5 w-3/5 min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh] ml-3">
+            <Link href={images[activeIndex].link} className="absolute top-1/2 left-1/2 -translate-x-1/2 z-10">
+              <button className="px-4 py-2 bg-black/50 text-sm rounded-full transition font-bold">
+                Ver Galería {images[activeIndex].label}
+              </button>
+            </Link>
             <AnimatePresence mode="wait">
               <motion.img
                 key={images[activeIndex].src}
@@ -89,31 +94,22 @@ const ProductosPage = () => {
           </div>
 
           {/* Right: Word list */}
-          <div className="flex flex-col w-3/5 justify-center items-center gap-6 p-6 z-[4] -translate-x-10 sm:translate-x-0">
+          <div className="flex flex-col w-3/5 justify-center items-center gap-6 p-2 z-[4] -translate-x-10 sm:translate-x-0 overflow-x-hidden h-full no-scrollbar">
             {/* <h2 className="text-xl font-semibold mb-2">Nuestros Productos</h2> */}
-            <ul className="flex flex-col gap-4 min-h-[360px] h-[calc(100vh_-_11rem)] md:h-[70vh] overflow-y-auto no-scrollbar">
+            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pb-20">
               {images.map((item, index) => (
                 <li
                   key={item.label}
                   onClick={() => setActiveIndex(index)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex cursor-pointer font-luckiestGuy transition-colors text-3xl font-medium uppercase md:text-4xl xl:text-5xl',
+                    'flex cursor-pointer font-londrina tracking-widest transition-colors text-3xl font-medium uppercase md:text-4xl xl:text-6xl last:pb-20 first:mt-20',
                     activeIndex === index
-                      ? 'text-teal-500'
+                      ? 'text-white fill-white font-bold font-luckiestGuy tracking-wide'
                       : 'text-gray-400 hover:text-gray-600'
                   )}
                 >
                   {item.label}
-                  {activeIndex === index && (
-                    <Link
-                      href={item.link}
-                      className="ml-3 text-sm font-normal lowercase underline hover:text-teal-700 transition rounded-full"
-                    >
-                      <ArrowUpRight className="w-6 h-6 shrink-0"/>
-                      gallery
-                    </Link>
-                  )}
                 </li>
               ))}
             </ul>
