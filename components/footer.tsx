@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex gap-3">
             <div className="">
               <Image
-                src="/bimmoonlogo.png" // update with your actual logo path
+                src="/bimmoonlogo.png"
                 alt="Bimmoon Media Logo"
                 width={120}
                 height={40}
