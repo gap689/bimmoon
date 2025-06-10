@@ -27,8 +27,23 @@ const images: ImageItem[] = [
   { label: 'Extras', src: '/images/extras.jpg', link: '/productos/extras' },
 ];
 
+const colorClasses = [
+  'text-red-500',
+  'text-white',
+  'text-gray-300',
+  'text-blue-500',
+  'text-pink-600',
+  'text-green-600',
+  'text-yellow-400',
+  'text-purple-500',
+  'text-cyan-500',
+  'text-emerald-500',
+  'text-indigo-400',
+];
+
 const ProductosPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   // const [direction, setDirection] = useState(1); // 1 for forward, -1 for back
 
   // const handleSetIndex = (index: number) => {
@@ -85,16 +100,20 @@ const ProductosPage = () => {
           {/* Right: Word list */}
           <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center sm:items-start sm:justify-start gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
             <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-2 sm:pl-10 lg:pl-20 ">
-              {images.map((item, index) => (
+              {images.map((item, index) => {
+                // const isActive = activeIndex === index;
+                const dynamicColor = colorClasses[activeIndex % colorClasses.length];
+              
+              return (
                 <li
                   key={item.label}
                   onClick={() => setActiveIndex(index)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex items-center cursor-pointer font-londrina tracking-widest font-medium uppercase text-4xl xl:text-6xl transition-colors last:pb-20 first:mt-20',
+                    'flex items-center cursor-pointer font-londrina tracking-widest font-medium uppercase text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20',
                     activeIndex === index
-                      ? 'text-white fill-white font-bold font-londrinaSolid tracking-wide'
-                      : 'text-gray-100'
+                      ? `${dynamicColor} font-bold font-londrinaSolid tracking-wide`
+                      : `${dynamicColor}`
                   )}
                 >
                   <p>
@@ -108,7 +127,7 @@ const ProductosPage = () => {
                       )
                     }
                 </li>
-              ))}
+              )})}
             </ul>
           </div>
         </section>
