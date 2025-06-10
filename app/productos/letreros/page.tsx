@@ -106,7 +106,7 @@ const LetrerosPage = () => {
 
   return ( 
     <div className="flex flex-col items-center justify-center pt-16 px-4">
-      <div className="w-full p-2 pb-4 sm:px-5 lg:px-7 flex justify-start">
+      <div className="w-full p-2 pb-4 sm:px-5 lg:px-7 flex justify-start mt-5">
         <BackButton/>
         <div className="">
           <Button variant="secondary">
