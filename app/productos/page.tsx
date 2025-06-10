@@ -62,7 +62,7 @@ const ProductosPage = () => {
         className="w-full h-full"
       >
         <section className="w-full flex h-full justify-center items-center relative">
-          <div className="hidden sm:block absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wider uppercase px-4 z-10 font-extralight font-serif">
+          <div className="hidden sm:block absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wide uppercase px-4 z-10 font-extralight font-serif">
             Our WORK
           </div>
           {/* Left: Image preview */}
@@ -111,9 +111,9 @@ const ProductosPage = () => {
                   onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex items-center cursor-pointer font-londrina tracking-widest font-medium uppercase text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20',
+                    'flex items-center cursor-pointer font-bungeeOutline font-medium uppercase text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20',
                     activeIndex === index
-                      ? `${dynamicColor} font-bold font-londrinaSolid tracking-wide`
+                      ? `${dynamicColor} font-bungee`
                       : `${dynamicColor}`
                   )}
                 >
