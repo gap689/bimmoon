@@ -37,7 +37,7 @@ const ProductosPage = () => {
   // };
 
   return ( 
-    <div className="flex items-center justify-center text-3xl h-full w-full px-10">
+    <div className="flex items-center justify-center text-3xl h-full w-full px-6">
       <Vortex
         backgroundColor="black"
         rangeY={800}
