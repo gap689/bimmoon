@@ -19,7 +19,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col justify-center p-4">
               <p className="text-xl font-bold">Bimmoon Stickers</p>
-              <p className="flex">1234 Street, City, Country</p>
+              <p className="font-sm">Huixquilucan, Edo Mex</p>
               <Link
                 href="https://www.google.com/maps?q=1234+Example+Street"
                 target="_blank"
@@ -28,6 +28,7 @@ export function Footer() {
               >
                 Google Maps
               </Link>
+              <p className="font-sm">rotulos.bimmoon@gmail.com</p>
             </div>
           </div>
         </div>
@@ -54,7 +55,7 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="mt-8 text-center text-sm text-[rgb(255,220,72)] font-michroma">
-        © 2025 Bimmoon Media Inc. All rights reserved.
+        © 2025 Bimmoon Stickers. All rights reserved.
       </div>
     </footer>
   );
