@@ -7,6 +7,8 @@ import Image from "next/image";
 import { Link, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { BackButton } from "@/components/back-button";
+import { Button } from "@/components/ui/button";
+import { SiGooglephotos } from "react-icons/si";
 
 const emblemasImages = [
   { id: 'emblema-1', src: '1.jpg', alt: 'Emblema 1' },
@@ -109,8 +111,16 @@ const EmblemasPage = () => {
 
   return ( 
     <div className="flex flex-col items-center justify-center pt-16">
-      <div className="w-full p-2 sm:pl-5">
+      <div className="w-full p-2 pb-4 sm:px-5 lg:px-7 flex justify-start">
         <BackButton/>
+        <div className="">
+          <Button variant="secondary">
+            <a href="https://photos.app.goo.gl/u6rhhym2NaSwJkFr7" target="_blank" rel="noopener noreferrer" className="flex gap-2 cursor-pointer text-sm">
+              Ver en Google Photos
+              <SiGooglephotos className="w-6 h-6 shrink-0"/>
+            </a>
+          </Button>
+        </div>
       </div>
       <div className="grid grid-cols-2 gap-4">
         {emblemasImages.map((img) => (

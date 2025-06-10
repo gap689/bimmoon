@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 type ImageItem = {
   label: string;
@@ -33,7 +34,6 @@ const colorClasses = [
   'text-gray-300',
   'text-blue-500',
   'text-pink-600',
-  'text-green-600',
   'text-yellow-400',
   'text-purple-500',
   'text-cyan-500',
@@ -43,7 +43,7 @@ const colorClasses = [
 
 const ProductosPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const router = useRouter();
   // const [direction, setDirection] = useState(1); // 1 for forward, -1 for back
 
   // const handleSetIndex = (index: number) => {
@@ -107,7 +107,8 @@ const ProductosPage = () => {
               return (
                 <li
                   key={item.label}
-                  onClick={() => setActiveIndex(index)}
+                  // onClick={() => setActiveIndex(index)}
+                  onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
                     'flex items-center cursor-pointer font-londrina tracking-widest font-medium uppercase text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20',
