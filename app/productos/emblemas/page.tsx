@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Link, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { BackButton } from "@/components/back-button";
 
 const emblemasImages = [
   { id: 'emblema-1', src: '1.jpg', alt: 'Emblema 1' },
@@ -107,7 +108,10 @@ const EmblemasPage = () => {
   };
 
   return ( 
-    <div className="flex items-center justify-center pt-16">
+    <div className="flex flex-col items-center justify-center pt-16">
+      <div className="w-full p-2 sm:pl-5">
+        <BackButton/>
+      </div>
       <div className="grid grid-cols-2 gap-4">
         {emblemasImages.map((img) => (
           <div

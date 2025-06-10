@@ -51,7 +51,7 @@ const ProductosPage = () => {
             Our WORK
           </div>
           {/* Left: Image preview */}
-          <div className="relative flex md:w-2/5 sm:w-3/5 w-full min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh]">
+          <div className="relative flex md:w-2/5 sm:w-3/5 w-full min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh] mt-12 xl:ml-8">
             <Link href={images[activeIndex].link} className="sm:absolute hidden sm:flex sm:bottom-6 xl:bottom-1/4 left-1/2 -translate-x-1/2 z-10 px-4 py-2 bg-black/50 text-sm rounded-full transition font-bold text-nowrap">
               Ver Galería {images[activeIndex].label}
             </Link>
@@ -76,15 +76,15 @@ const ProductosPage = () => {
                   scale: 0.95,
                 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
-                className="absolute w-full h-full object-cover rounded-lg"
+                className="absolute w-full h-full object-cover"
               />
             </AnimatePresence>
             <div className="md:hidden absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 z-10" />
           </div>
 
           {/* Right: Word list */}
-          <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
-            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar">
+          <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center sm:items-start sm:justify-start gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
+            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-2 sm:pl-10 lg:pl-20 ">
               {images.map((item, index) => (
                 <li
                   key={item.label}

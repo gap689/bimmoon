@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Link, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { BackButton } from "@/components/back-button";
 
 const portaplacasImages = Array.from({ length: 14 }, (_, i) => ({
   id: `portaplaca-${i + 1}`,
@@ -102,7 +103,10 @@ const PortaplacasPage = () => {
   };
 
   return ( 
-    <div className="flex items-center justify-center pt-16">
+    <div className="flex flex-col items-center justify-center pt-16">
+      <div className="w-full p-2 sm:pl-5">
+        <BackButton/>
+      </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {portaplacasImages.map((img) => (
           <div

@@ -2,10 +2,11 @@
 
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Link, Mail } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowLeft, Link, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { BackButton } from "@/components/back-button";
 
 const acrilicosImages = [
   { id: 'acrilico-1', src: '1.jpg', alt: 'Acrílico 1' },
@@ -111,7 +112,10 @@ const AcrilicoPage = () => {
   };
 
   return ( 
-    <div className="flex items-center justify-center pt-16">
+    <div className="flex flex-col items-center justify-center pt-16">
+      <div className="w-full p-2 sm:pl-5">
+        <BackButton/>
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {acrilicosImages.map((img) => (
           <div
