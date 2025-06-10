@@ -28,8 +28,8 @@ const images: ImageItem[] = [
 ];
 
 const colorClasses = [
-  'text-red-500',
   'text-white',
+  'text-red-500',
   'text-gray-300',
   'text-blue-500',
   'text-pink-600',
