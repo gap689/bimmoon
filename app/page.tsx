@@ -1,11 +1,9 @@
 "use client"
 import { BrandMarquee } from "@/components/brand-marquee";
 import { Intro } from "@/components/intro";
-import { TextParallaxContentExample } from "@/components/text-parallax-content";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { TopNavigation } from "@/components/top-navigation";
-import GridSection from "@/components/grid-section";
 import HeroSecondary from "@/components/hero-secondary";
 import Section from "@/components/section";
 import { Footer } from "@/components/footer";
@@ -20,7 +18,6 @@ export default function Home() {
       document.body.style.overflow = 'auto';
     }
 
-    // Clean up on unmount (optional)
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -28,17 +25,15 @@ export default function Home() {
 
   return (
     <main className="h-full">
-      {/* <Hero setEntered={setEntered}/> */}
-      {/* <section className="relative w-full h-full"> */}
-        <AnimatePresence
-          initial
-          mode="wait"
-        >
-          {!entered && (
-            <Intro setEntered={setEntered}/>
-          )}
-        </AnimatePresence>
-      {/* </section> */}
+      <AnimatePresence
+        initial
+        mode="wait"
+      >
+        {!entered && (
+          <Intro setEntered={setEntered}/>
+        )}
+      </AnimatePresence>
+
       { entered && (
         <motion.div
           className="relative h-full"
@@ -55,7 +50,6 @@ export default function Home() {
             <BrandMarquee/>
           </div>
           <Section/>
-          {/* <GridSection /> */}
           <Footer/>
         </motion.div>
       )}

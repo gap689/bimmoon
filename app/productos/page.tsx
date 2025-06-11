@@ -5,7 +5,6 @@ import { useState } from "react";
 import clsx from 'clsx';
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 type ImageItem = {
@@ -44,12 +43,6 @@ const colorClasses = [
 const ProductosPage = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
-  // const [direction, setDirection] = useState(1); // 1 for forward, -1 for back
-
-  // const handleSetIndex = (index: number) => {
-  //   setDirection(index > activeIndex ? 1 : -1);
-  //   setActiveIndex(index);
-  // };
 
   return ( 
     <div className="flex items-center justify-center text-3xl h-full w-full px-4 md:px-6">
@@ -74,17 +67,14 @@ const ProductosPage = () => {
                 alt={images[activeIndex].label}
                 initial={{
                   opacity: 0,
-                  // x: direction === 1 ? 100 : -100,
                   scale: 0.95,
                 }}
                 animate={{
                   opacity: 1,
-                  // x: 0,
                   scale: 1,
                 }}
                 exit={{
                   opacity: 0,
-                  // x: direction === 1 ? -100 : 100,
                   scale: 0.95,
                 }}
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
@@ -98,13 +88,11 @@ const ProductosPage = () => {
           <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center sm:items-start sm:justify-start gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
             <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-2 sm:pl-10 lg:pl-20">
               {images.map((item, index) => {
-                // const isActive = activeIndex === index;
                 const dynamicColor = colorClasses[activeIndex % colorClasses.length];
               
               return (
                 <li
                   key={item.label}
-                  // onClick={() => setActiveIndex(index)}
                   onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
@@ -114,9 +102,7 @@ const ProductosPage = () => {
                       : `${dynamicColor}`
                   )}
                 >
-                  {/* <p> */}
                     {item.label}
-                  {/* </p> */}
                     {
                       activeIndex === index && (
                         <Link href={images[activeIndex].link} className="sm:hidden z-10 sm:px-4 sm:py-2 px-3 py-1 bg-black/50 text-xs rounded-full transition font-normal font-sans lowercase text-nowrap ml-2 tracking-normal">
