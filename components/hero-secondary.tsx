@@ -8,7 +8,7 @@ const HeroSecondary = () => {
         loop
         playsInline
       >
-        <source src="/lasercut.mp4" type="video/mp4" />
+        <source src="/bimmoonlaser.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
