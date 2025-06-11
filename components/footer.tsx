@@ -21,7 +21,7 @@ export function Footer() {
               <p className="text-xl font-bold">Bimmoon Stickers</p>
               <p className="font-sm">Huixquilucan, Edo Mex</p>
               <Link
-                href="https://www.google.com/maps?q=1234+Example+Street"
+                href="https://maps.app.goo.gl/4irpKvgYVgVE2fE87"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-yellow-300 uppercase text-sm font-semibold font-michroma"
