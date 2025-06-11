@@ -52,7 +52,7 @@ const ProductosPage = () => {
   // };
 
   return ( 
-    <div className="flex items-center justify-center text-3xl h-full w-full px-6">
+    <div className="flex items-center justify-center text-3xl h-full w-full px-4 md:px-6">
       <Vortex
         backgroundColor="black"
         rangeY={800}
@@ -99,7 +99,7 @@ const ProductosPage = () => {
 
           {/* Right: Word list */}
           <div className="sm:flex sm:flex-col sm:flex-shrink-0 absolute sm:static sm:w-3/5 w-full items-center justify-center sm:items-start sm:justify-start gap-6 p-2 pl-5 z-20 overflow-x-hidden h-full no-scrollbar">
-            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-2 sm:pl-10 lg:pl-20 ">
+            <ul className="flex flex-col gap-3 min-h-[460px] h-[calc(100vh_-_10rem)] overflow-y-visible no-scrollbar pl-2 sm:pl-10 lg:pl-20">
               {images.map((item, index) => {
                 // const isActive = activeIndex === index;
                 const dynamicColor = colorClasses[activeIndex % colorClasses.length];
@@ -111,7 +111,7 @@ const ProductosPage = () => {
                   onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex items-center cursor-pointer text-4xl sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20 uppercase font-londrinaOutline font-semibold tracking-wider',
+                    'flex items-center cursor-pointer text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20 uppercase font-londrinaOutline font-semibold tracking-wider',
                     activeIndex === index
                       ? `${dynamicColor} font-londrinaSolid`
                       : `${dynamicColor}`
