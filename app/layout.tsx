@@ -79,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungeeOutline.variable} ${bungee.variable}}`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungeeOutline.variable} ${bungee.variable} antialiased`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"

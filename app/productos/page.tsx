@@ -111,15 +111,15 @@ const ProductosPage = () => {
                   onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex items-center cursor-pointer text-4xl sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20 font-bungeeOutline',
+                    'flex items-center cursor-pointer text-4xl sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20 uppercase font-londrinaOutline font-semibold tracking-wider',
                     activeIndex === index
-                      ? `${dynamicColor} font-bungee`
-                      : `${dynamicColor} font-bungeeOutline`
+                      ? `${dynamicColor} font-londrinaSolid`
+                      : `${dynamicColor}`
                   )}
                 >
-                  <p>
+                  {/* <p> */}
                     {item.label}
-                  </p>
+                  {/* </p> */}
                     {
                       activeIndex === index && (
                         <Link href={images[activeIndex].link} className="sm:hidden z-10 sm:px-4 sm:py-2 px-3 py-1 bg-black/50 text-xs rounded-full transition font-normal font-sans lowercase text-nowrap ml-2 tracking-normal">
