@@ -10,6 +10,7 @@ const brands = [
   { name: "Mimaki", src: "/brands/mimaki.svg" },
   { name: "Asus", src: "/brands/asus.svg" },
   { name: "AveryDennison", src: "/brands/averydennison.svg" },
+  { name: "Oracal", src: "/brands/oracal.svg" },
   { name: "xtool", src: "/brands/xtool.svg" },
   { name: "eurocotton", src: "/brands/eurocotton.svg" },
   { name: "fitcap", src: "/brands/fitcap.svg" },
