@@ -50,7 +50,7 @@ export default function Home() {
           <HeroSecondary />
           <div className="pb-5">
             <div className="py-5 p-page font-michroma text-center">
-              Original brands for quality and performance.
+              Marcas originales de calidad y rendimiento.
             </div>
             <BrandMarquee/>
           </div>
