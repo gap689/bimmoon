@@ -62,9 +62,6 @@ const ProductosPage = () => {
         className="w-full h-full"
       >
         <section className="w-full flex h-full justify-center items-center relative">
-          <div className="hidden sm:block absolute sm:left-8 left-0 top-1/2 translate-y-36 -rotate-90 origin-left text-4xl lg:text-5xl tracking-wide uppercase px-4 z-10 font-extralight font-serif">
-            Our WORK
-          </div>
           {/* Left: Image preview */}
           <div className="relative flex md:w-2/5 sm:w-3/5 w-full min-w-[250px] min-h-[360px] h-[calc(100vh_-_10rem)] md:h-[80vh] mt-12 xl:ml-8">
             <Link href={images[activeIndex].link} className="sm:absolute hidden sm:flex sm:bottom-6 xl:bottom-1/4 left-1/2 -translate-x-1/2 z-10 px-4 py-2 bg-black/50 text-sm rounded-full transition font-bold text-nowrap">
