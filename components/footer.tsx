@@ -40,14 +40,11 @@ export function Footer() {
           </div>
 
           <div className="flex justify-center gap-4 mt-2">
-            <Link href="https://facebook.com" target="_blank">
+            <Link href="https://www.facebook.com/share/16oGd1C3M4/?mibextid=wwXIfr" target="_blank">
               <FaFacebookF className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
             </Link>
-            <Link href="https://instagram.com" target="_blank">
+            <Link href="https://www.instagram.com/bimmoon_stickers?igsh=bG4zd2k4YWo3N2xm&utm_source=qr" target="_blank">
               <FaInstagram className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
-            </Link>
-            <Link href="https://linkedin.com" target="_blank">
-              <FaLinkedinIn className="text-xl w-7 h-7 text-[rgb(255,220,72)]" />
             </Link>
           </div>
         </div>
