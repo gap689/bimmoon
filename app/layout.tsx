@@ -5,7 +5,7 @@ import './globals.css'
 import { ThemeProvider } from "@/components/theme-provider"
 import { TopNavigation } from '@/components/top-navigation'
 import Script from 'next/script'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -56,16 +56,16 @@ const michroma = Michroma({
   variable: '--font-michroma',
 });
 
-const bungee = Bungee({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-bungee',
-});
-
 const bungeeOutline = Bungee_Outline({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-bungee-outline'
+});
+
+const bungee = Bungee({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-bungee',
 });
 
 export const metadata: Metadata = {
@@ -79,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungee.variable} ${bungeeOutline.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungeeOutline.variable} ${bungee.variable}}`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"

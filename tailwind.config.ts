@@ -12,12 +12,12 @@ const config: Config = {
       fontFamily: {
         autograf: ['var(--font-autograf)'],
         retrophile: ['var(--font-retrophile)'],
-		londrina: ['var(--font-londrina-outline)'],
-		londrinaSolid: ['var(--font-londrina-solid)'],
-		luckiestGuy: ['var(--font-luckiest-guy)'],
-		michroma: ['var(--font-michroma)'],
-		bungee: ['var(--font-bungee)'],
-		bungeeOutline: ['var(--font-bungee-outline)'],
+        londrina: ['var(--font-londrina-outline)'],
+        londrinaSolid: ['var(--font-londrina-solid)'],
+        luckiestGuy: ['var(--font-luckiest-guy)'],
+        michroma: ['var(--font-michroma)'],
+        bungeeOutline: ['var(--font-bungee-outline)'],
+        bungee: ['var(--font-bungee)'],
       },
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

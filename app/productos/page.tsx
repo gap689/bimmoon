@@ -31,7 +31,7 @@ const images: ImageItem[] = [
 const colorClasses = [
   'text-white',
   'text-red-500',
-  'text-gray-300',
+  'text-gray-400',
   'text-blue-500',
   'text-pink-600',
   'text-yellow-400',
@@ -111,10 +111,10 @@ const ProductosPage = () => {
                   onClick={() => router.push(item.link)}
                   onMouseEnter={() => setActiveIndex(index)}
                   className={clsx(
-                    'flex items-center cursor-pointer font-bungeeOutline font-medium uppercase text-[2.75rem] sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20',
+                    'flex items-center cursor-pointer text-4xl sm:text-5xl xl:text-6xl transition-colors duration-300 last:pb-20 first:mt-20 font-bungeeOutline',
                     activeIndex === index
                       ? `${dynamicColor} font-bungee`
-                      : `${dynamicColor}`
+                      : `${dynamicColor} font-bungeeOutline`
                   )}
                 >
                   <p>
