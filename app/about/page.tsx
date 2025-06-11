@@ -18,19 +18,19 @@ const AboutPage = () => {
             En bimmoon diseñamos lo que te representa.
           </p>
           <div>
-            <h2 className="uppercase font-medium text-xs my-4 text-[rgb(18,87,246)]">Qué hacemos?</h2>
-            <p className="text-neutral-300 font-medium font-sm md:font-base">
+            <h2 className="uppercase font-medium text-sm my-4 text-[rgb(18,87,246)]">Qué hacemos?</h2>
+            <p className="text-neutral-300 font-medium text-lg md:text-xl">
               En Bimmoon, transformamos ideas en <span className="text-[rgb(18,87,246)]">productos únicos</span> que marcan la diferencia. Diseñamos y fabricamos <span className="text-[rgb(18,87,246)]">letreros</span>, <span className="text-[rgb(18,87,246)]">llaveros</span>, <span className="text-[rgb(18,87,246)]">portaplacas</span>, <span className="text-[rgb(18,87,246)]">calcomanías</span> y más, personalizados con <span className="text-[rgb(18,87,246)]">materiales de alta calidad</span> y precisión de <span className="text-[rgb(18,87,246)] font-semibold">corte láser</span>. Nos enfocamos en cada detalle para que cada pieza refleje tu estilo, marca o mensaje con originalidad y profesionalismo. Ya sea para un negocio, un regalo o uso personal, ofrecemos soluciones creativas, duraderas y <span className="text-[rgb(18,87,246)]">a la medida</span> de tus necesidades. <span className="text-white font-semibold">Si puedes imaginarlo, podemos crearlo.</span>
             </p>
           </div>
 
           <div className="mt-10">
-            <h2 className="uppercase font-medium text-[rgb(18,87,246)] my-4 text-xs">Sólo las mejores marcas</h2>
+            <h2 className="uppercase font-medium text-[rgb(18,87,246)] my-4 text-sm">Sólo las mejores marcas</h2>
             <BrandMarquee/>
           </div>
           <div className="mt-10">
-            <h2 className="uppercase font-medium text-[rgb(18,87,246)] my-4 text-xs">Contáctanos</h2>
-            <WhatsAppButton/>
+            <h2 className="uppercase font-medium text-[rgb(18,87,246)] my-4 text-sm">Contáctanos</h2>
+            <WhatsAppButton label="Cotiza tu diseño!"/>
             <div className="py-2">
               email: rotulos.bimmoon@gmail.com
             </div>
