@@ -56,18 +56,6 @@ const michroma = Michroma({
   variable: '--font-michroma',
 });
 
-const bungeeOutline = Bungee_Outline({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-bungee-outline'
-});
-
-const bungee = Bungee({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-bungee',
-});
-
 export const metadata: Metadata = {
   title: 'Bimmoon',
   description: 'Creative works',
@@ -79,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} ${bungeeOutline.variable} ${bungee.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning className={`${autograf.variable} ${retrophile.variable} ${londrinaOutline.variable} ${londrinaSolid.variable} ${luckiestGuy.variable} ${michroma.variable} antialiased`}>
       <body className={`${inter.className}`}>
         <ThemeProvider
           attribute="class"
